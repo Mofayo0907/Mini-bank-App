@@ -1,5 +1,8 @@
 
 allMembers = []
+// if(localStorage.allMembers){
+// //    allMembers = localStorage.getItem(JSON.stringify("savaBankDetails"))
+// }
 const signUp =()=>{
 registeredStudents = {
     fName: firstName.value,
@@ -9,8 +12,21 @@ registeredStudents = {
 
 }
 
+firstName.value == ""
+ if(firstName.value != "" ){
+ 
+    allMembers.push(registeredStudents.fName)
+    console.log(allMembers)
+    alert("saved")
 
-    console.log(registeredStudents)
 
 
+ }
+else{
+    alert("input the following  info")
 }
+
+
+   localStorage.setItem("savaBankDetails", JSON.stringify(allMembers))
+}
+
