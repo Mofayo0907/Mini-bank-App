@@ -12,9 +12,9 @@ const signUp = () => {
     }
     if (firstName.value != "") {
         console.log(allMembers)
-         window.location.href = "bankapp.html", allMembers.push(registeredStudents)
-        firstName.value = "", lastName.value = "", email.value  = "", passWord.value = ""
-           alert("saved")
+        window.location.href = "bankapp.html", allMembers.push(registeredStudents)
+        firstName.value = "", lastName.value = "", email.value = "", passWord.value = ""
+        alert("saved")
 
     }
     else {
@@ -22,4 +22,3 @@ const signUp = () => {
     }
     localStorage.setItem("saveBankDetails", JSON.stringify(allMembers))
 }
-
