@@ -1,0 +1,121 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: sans-serif;
+}
+body{
+    /* background: rgb(212, 212, 212); */
+    background: #5f3dc4;
+}
+.logo{
+    font-size: 22px;
+    margin: 5px;
+    font-weight: 900;
+    color: #5f3dc4;
+}
+.wrapper{
+    margin: auto;
+    display: flex;
+}
+.sidebar{
+    width: 100px;
+    height: 100vh;
+    background: #000;
+}
+.sidebar ul{
+    margin-top: 50px;
+}
+.sidebar ul li{
+    margin-top: 50px;
+    list-style: none;
+    text-align: center;
+    color: #fff;
+}
+.sidebar ul li i{
+    margin: 20px;
+    font-size: 22px;
+    cursor: pointer;
+    color: #fff;
+}
+.sidebar li:hover, li.active{
+    border-right: 3px solid #fff;
+}
+ .head{
+    display: flex;
+    padding: 20px 30px;
+}
+.head-title span{
+    font-size: 14px;
+    color: rgb(151, 151, 151);
+}
+ .card span{
+    font-size: 20px;
+    padding: 25px 10px;
+}
+ .balance{
+    margin-left: 100px;
+} 
+ img{
+    /* margin-bottom: 20px; */
+    width: 80px;
+    height: 80px;
+}
+ .image{
+    margin-left: 300px;
+} 
+.pic{
+    height: 30px;       
+    width: 30px;
+    border-radius: 50%;
+} 
+.card-board{
+    display: flex;
+    padding: 15px 40px;
+}
+.card{
+    width: 280px;
+    height: 120px;
+    padding: 20px;
+    background: #fff;
+    margin-right: 20px;
+    border-radius: 10px;
+}
+.inner-card{
+    display: flex;
+    gap: 50px;
+}
+.car{
+    width: 200px;
+    height: 100px;
+    padding: 20px 40px;
+    background-color: #fff;
+    margin-right: 70px;
+    border-radius: 10px;
+}
+.trans-board{
+    margin-right: 70px;
+    width: 280px;
+    height: 160px;
+    border-radius: 10px;
+    box-shadow: 4px 4px 4px #000;
+    background: #5f3dc4;
+}
+input{
+    margin: 10px;
+    height: 30px;
+    width: 250px;
+    border: 1px solid black;
+}
+h2{
+    margin: 10px;
+}
+button{
+    border: none;
+    height: 40px;
+    margin: 10px;
+    width: 250px;
+    background-color: purple;
+}
+input::placeholder{
+    padding: 10px;
+}
