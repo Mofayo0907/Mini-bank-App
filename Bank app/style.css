@@ -2,23 +2,25 @@
     margin: 0;
     padding: 0;
     font-family: sans-serif;
+    /* border: 1px solid red; */
 }
 body{
     /* background: rgb(212, 212, 212); */
-    background: #5f3dc4;
+    background: #686881;
 }
 .logo{
     font-size: 22px;
-    margin: 5px;
-    font-weight: 900;
-    color: #5f3dc4;
-}
+
+        font-weight: 900;
+        color: #5f3dc4;
+    }
 .wrapper{
     margin: auto;
     display: flex;
+    /* background-color: #5f3dc4; */
+    width: 100%;
 }
 .sidebar{
-    width: 100px;
     height: 100vh;
     background: #000;
 }
@@ -32,7 +34,7 @@ body{
     color: #fff;
 }
 .sidebar ul li i{
-    margin: 20px;
+    
     font-size: 22px;
     cursor: pointer;
     color: #fff;
@@ -41,8 +43,8 @@ body{
     border-right: 3px solid #fff;
 }
  .head{
-    display: flex;
-    padding: 20px 30px;
+    margin: auto;
+ 
 }
 .head-title span{
     font-size: 14px;
@@ -50,10 +52,10 @@ body{
 }
  .card span{
     font-size: 20px;
-    padding: 25px 10px;
+
 }
  .balance{
-    margin-left: 100px;
+  
 } 
  img{
     /* margin-bottom: 20px; */
@@ -61,7 +63,7 @@ body{
     height: 80px;
 }
  .image{
-    margin-left: 300px;
+
 } 
 .pic{
     height: 30px;       
@@ -70,14 +72,13 @@ body{
 } 
 .card-board{
     display: flex;
-    padding: 15px 40px;
 }
 .card{
     width: 280px;
     height: 120px;
-    padding: 20px;
+   
     background: #fff;
-    margin-right: 20px;
+   
     border-radius: 10px;
 }
 .inner-card{
@@ -87,13 +88,12 @@ body{
 .car{
     width: 200px;
     height: 100px;
-    padding: 20px 40px;
+  
     background-color: #fff;
-    margin-right: 70px;
     border-radius: 10px;
 }
 .trans-board{
-    margin-right: 70px;
+ 
     width: 280px;
     height: 160px;
     border-radius: 10px;
@@ -101,13 +101,13 @@ body{
     background: #5f3dc4;
 }
 input{
-    margin: 10px;
+   
     height: 30px;
     width: 250px;
     border: 1px solid black;
 }
 h2{
-    margin: 10px;
+ 
 }
 button{
     border: none;
@@ -117,5 +117,5 @@ button{
     background-color: purple;
 }
 input::placeholder{
-    padding: 10px;
+   
 }

@@ -2,25 +2,26 @@
 var initialAmount = 1000
 
 function withdraw() {
-    var balance = Number(inputAmount.value)
+    var balance = Number(collectAmount.value)
     if (balance > initialAmount) {
-        space.innerHTML = "you have insufficient amount"
+        spate.innerHTML = "you have insufficient amount"
     }
     else if (balance == "") {
-        space.innerHTML = "input the amount you want to withdraw  "
+        spate.innerHTML = "input the amount you want to withdraw  "
     }
     else if (initialAmount > balance) {
         initialAmount = initialAmount - balance
-        space.innerHTML = initialAmount
+        spate.innerHTML = initialAmount
     }
     else if (balance = String) {
-        space.innerHTML = "invalid input"
+        spate.innerHTML = "invalid input"
     }
 }
 
 
 function balance() {
-    space.innerHTML = ` you have  $${initialAmount} left in your account`
+    playR.innerHTML = ` you have  $${initialAmount} left in your account`
+    bala.innerHTML = ` Total balance = ${initialAmount}`
 }
 
 
@@ -37,6 +38,7 @@ function deposit() {
     else if (balance = String) {
         space.innerHTML = "invalid input"
     }
+    inputAmount.value =""
    
 
 }

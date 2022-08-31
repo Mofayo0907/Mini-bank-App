@@ -96,6 +96,10 @@ h1 span{
     width:60%;
 }
 
+input{
+    border-radius: 12px;
+    border: none;
+}
 
 p{
     font-size:1.6rem;
