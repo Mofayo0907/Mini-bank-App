@@ -1,0 +1,116 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: sans-serif;
+    /* border: 1px solid red; */
+}
+body{
+    /* background: rgb(212, 212, 212); */
+    background: #2a2a92;
+}
+.logo{
+    font-size: 22px;
+
+        font-weight: 900;
+        color: #5f3dc4;
+    }
+.wrapper{
+   
+   /* display: flex;
+   flex-direction: column;
+   align-items: center; */
+    /* background-color: #5f3dc4; */
+    width: 100%;
+}
+.sidebar{
+    display: flex;
+flex-direction: column;
+    align-items: center; 
+  min-height: 600px;
+    background: #000;
+}
+
+.sidebar ul li{
+
+    list-style: none;
+    text-align: center;
+    color: #fff;
+}
+.sidebar ul li i{
+    
+    font-size: 22px;
+    cursor: pointer;
+    color: #fff;
+}
+.sidebar li:hover, li.active{
+    border-right: 3px solid #fff;
+}
+ .head{
+    margin: auto;
+ 
+}
+.head-title span{
+    font-size: 14px;
+    color: rgb(151, 151, 151);
+}
+ .card span{
+    font-size: 20px;
+
+}
+ .balance{
+  
+} 
+ img{
+    /* margin-bottom: 20px; */
+    width: 80px;
+    height: 80px;
+}
+ .image{
+
+} 
+.pic{
+    height: 30px;       
+    width: 30px;
+    border-radius: 50%;
+} 
+
+.card{
+
+   
+    background: #fff;
+   
+    border-radius: 10px;
+}
+
+car{
+    width: 200px;
+    height: 100px;
+  
+    background-color: #fff;
+    border-radius: 10px;
+}
+.trans-board{
+ 
+    width: 280px;
+   
+    border-radius: 10px;
+    box-shadow: 4px 4px 4px #000;
+    background: #5f3dc4;
+}
+input{
+   
+    height: 30px;
+    width: 250px;
+    border: 1px solid black;
+}
+
+button{
+    border: none;
+    height: 40px;
+    margin: 10px;
+    width: 250px;
+    background-color: purple;
+}
+input::placeholder{
+   
+}
