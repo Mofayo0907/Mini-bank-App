@@ -4,7 +4,8 @@
 *,*::before,*::after{
     margin:0;
     padding:0;
-    box-sizing:inherit;
+    /* border: #444 solid 1px; */
+    /* box-sizing:inherit; */
     font-size:62.5%;
     box-sizing:border-box;
     scroll-behavior:smooth
@@ -57,6 +58,9 @@ h1 span{
     animation:moveInBottom 0.5s ease;
     padding:1.2rem 2.4rem;
 }
+img{
+    animation:moveInBottom 0.5s ease; 
+}
 
 .learn-more:hover{
     background-color:#5f3dc4;
@@ -64,21 +68,13 @@ h1 span{
     color:#f8f7f9;
 }
 
-.header{
-    display:flex;
-    justify-content:space-between;
-    align-items:center;
-    padding:0 4.8rem;
-    height:9.6rem;
-    margin:0 auto;
-    position:relative
-}
+
 
 .logo{
-    font-size:2rem;
+    font-size:25px;
     font-weight:800;
     text-decoration: none;
-    color: #4c319d;
+    color: rgb(76, 49, 157);
 }
 
 .hero{
@@ -97,8 +93,9 @@ h1 span{
 }
 
 input{
-    border-radius: 12px;
+   
     border: none;
+    background-color: rgb(203, 202, 205);
 }
 
 p{
@@ -111,7 +108,7 @@ p{
 }
 
 .nav-link, .nav-btn{
-    display:inline-block;
+   
     font-size:1.4rem;
     font-weight:600;
     font-family: inherit;
@@ -165,19 +162,34 @@ ul{
     transform:translateY(-0.4rem)
 }
 .nav-item:not(:last-child){
-    margin-right:4.8rem
+    /* margin-right:4.8rem */
 }
 section{
-    padding:4.8rem 0 8rem 0;
+    padding:20px 0 20px 0;
     min-height:calc(100vh - 9.6rem);
     display:flex;
     margin-top:9.6rem;
     align-items:center
 }
-
+@keyframes moveInLeft{
+    0%{
+        opacity:0;
+        -webkit-transform:translateX(10rem);
+        transform:translateX(10rem)
+    }
+    75%{
+        -webkit-transform:translateX(-2rem);
+        transform:translateX(-2rem)
+    }
+    100%{
+        opacity:1;
+        -webkit-transform:translateX(0);
+        transform:translateX(0)
+    }
+}
 /* RESPONSIVENESS */
 
-
+/* 
 @media only screen and (max-width: 26.25em){
     .nav-link,.nav-btn{
         font-size:2.4rem
@@ -202,8 +214,8 @@ section{
     
 }
 
-@media only screen and (max-width: 56.25em){
-    nav{
+@media only screen and (max-width: 56.25em){ */
+    /* nav{
         background-color:white;
         position:absolute;
         top:0;
@@ -219,8 +231,8 @@ section{
         opacity:0;
         pointer-events:none;
         visibility:hidden
-    }
-    ul{
+    } */
+    /* ul{
         -webkit-box-orient:vertical;
         -webkit-box-direction:normal;
         -ms-flex-direction:column;
@@ -316,22 +328,7 @@ section{
 }
 .header__menu-line::after{
     top:0.7rem
-}
+} */
 
 
-@keyframes moveInLeft{
-    0%{
-        opacity:0;
-        -webkit-transform:translateX(10rem);
-        transform:translateX(10rem)
-    }
-    75%{
-        -webkit-transform:translateX(-2rem);
-        transform:translateX(-2rem)
-    }
-    100%{
-        opacity:1;
-        -webkit-transform:translateX(0);
-        transform:translateX(0)
-    }
-}
+

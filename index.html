@@ -1,58 +1,71 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="preconnect" href="https://fonts.googleapis.com"/>
-    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700;800;900&display=swap" rel="stylesheet"/>
-    <link rel="stylesheet" href="style.css"/>
-    <link rel="stylesheet" href="styles.css"/>
-    <title>Bankify</title>
-  </head>
-  <body>
-    <header class="header">
-      <a href="#">
-        <span class="logo">BANKIFY</span>
-      </a>
-      <nav class="navigation">
-        <ul class="navigation__list">
-          <li class="nav-item">
-            <a href="bankapp.html" class="nav-link">Sign In</a>
-          </li>
-          <li class="nav-item">
-            <a href="sign up.html" class="nav-link">Sign Up</a>
-          </li>
-          <li class="nav-item">
-            <a href="READ.html" class="nav-link">Docs</a>
-          </li>
-          <li class="nav-item">
-            <a href="dashboard.html" class="nav-btn">Dashboard</a>
-          </li>
-        </ul>
-      </nav>
-      <!-- Mobile -->
-      <button class="header__menu-btn">
-        <span class="header__menu-line"></span>
+
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700;800;900&display=swap"
+    rel="stylesheet" />
+  <link rel="stylesheet" href="style.css" />
+  <link rel="stylesheet" href="bootstrap.css">
+  <link rel="stylesheet" href="styles.css" />
+  <title>Bankify</title>
+</head>
+
+<body>
+
+  <nav style="font-family: sans-serif; "
+    class="navbar navbar-expand-lg py-3 fw-bold fs-8 display-8 bg-light shadow position position-sticky sticky-top">
+    <div class="container-fluid">
+      <a class="navbar-brand logo col-7 " href="index.html">BANKIFY</a>
+       <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
+        aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon fs-3">🏛</span>
       </button>
-    </header>
-    <main class="main">
-      <section>
-        <div class="hero">
-            <img src="cards.png" alt="Cards" class="hero__img card"/>
-          <div class="hero__textbox">
-            <h1>Meet the next generation <span>banking</span></h1>
-            <p>
-              Lorem ipsum dolor sit amet consectetur adipisicing elit. Minima,
-              culpa beatae! Magni repellat unde quas, dolorum fugiat amet
-              deleniti natus.
-            </p>
-            <button class="learn-more">
-              Learn more
-            </button>
-          </div>
+    </div>
+      <div class="collapse navbar-collapse col-6 m-auto" id="navbarSupportedContent">
+        <ul class="navbar-nav me-auto d-flex justify-content-end mb-2 mb-lg-0">
+
+          <li class="nav-item">
+            <a class="nav-link text-dark  btn btn-outline-secondary "  href="sign up.html">Sign up</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link text-dark" href="bankapp.html">Sign In</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link text-dark" href="READ.html">Docs</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link text-dark" href="dashboard.html">Dashboard</a>
+          </li>
+
+        </ul>
+      </div>
+     
+  </nav>
+
+  <main class="main">
+    <section>
+      <div class="hero">
+        <img src="cards.png" alt="Cards" class="hero__img card" />
+        <div class="hero__textbox">
+          <h1>Meet the next generation <span>banking</span></h1>
+          <p class="pb-5">
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Minima,
+            culpa beatae! Magni repellat unde quas, dolorum fugiat amet
+            deleniti natus.
+          </p>
+          <button class="learn-more">
+            Learn more
+          </button>
         </div>
-      </section>
-    </main>
+      </div>
+    </section>
+  </main>
+
+  <script src="./bootstrap-5.1.3-dist/js/bootstrap.js"></script>
 </body>
+
 </html>
