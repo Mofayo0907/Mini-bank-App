@@ -22,11 +22,11 @@
       <span class="navbar-toggler-icon fs-3">🏛</span>
     </button>
   </div>
-    <div class="collapse navbar-collapse col-6 m-auto" id="navbarSupportedContent">
-      <ul class="navbar-nav me-auto d-flex justify-content-end mb-2 mb-lg-0">
+    <div class="collapse navbar-collapse col-5 m-auto" id="navbarSupportedContent">
+      <ul class="navbar-nav me-auto d-flex justify-content-end">
+          <a class="nav-link text-dar mb-2 mb-lg-0">
 
-        <li class="nav-item">
-          <a class="nav-link text-dark  btn btn-outline-secondary " href="index.html">Home</a>
+        <li class="nav-link text-dark  btn btn-outline-secondary  "href="index.html">Home</a>
         </li>
         <li class="nav-item">
           <a class="nav-link text-dark" href="bankapp.html">Sign In</a>
@@ -44,17 +44,25 @@
 </nav>
 
   <section class="m-auto mt-5 col-7 col-lg-4 d-flex flex-column align-items-start bg-white " style="border: 1px solid rgb(84, 44, 102);border-radius: 5px 5px 10px 10px; box-shadow: 0 0 6px 2px rgb(40, 8, 81);">
-    <label class="fs-3 ms-4 mt-5" for="">Email</label>
-    <input type="text" class="m-auto rounded-3 col-11 py-4 fs-3 my-2 mt-2" id="firstName" placeholder="Firstname">
-    <label class="fs-3 ms-4 mt-5" for="">Email</label>
-    <input type="text" class="m-auto  rounded-3 col-11 py-4 fs-3 my-2 " id="lastName" placeholder="Lastname">
-    <label class="fs-3 ms-4 mt-5" for="">Email</label>
-    <input type="text" class="m-auto rounded-3 col-11 py-4 fs-3 my-2 " id="email" placeholder="Email Address">
-    <label class="fs-3 ms-4 mt-5" for="">Email</label>
-    <input type="password" class="m-auto rounded-3 col-11 py-4 fs-3 my-2 " id="passWord" placeholder="Password">
-  <button  class="m-auto rounded-pill  py-2 px-5  fs-2 btn btn-outline-light navigation__btn" style="background-color: rgb(27,19,51);" onclick="signUp()"> Sign Up </button>
+   
+   <center class="fs-1 fw-bolder m-auto" style="color: rgba(56, 17, 108, 0.771); font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;">Get Started</center>
+    <label class="fs-3 ms-4 mt-5" for="">Firstname</label>
+    <input type="text" class="m-auto rounded-3 col-11 py-4 fs-3 my-2 mt-2" id="firstName" placeholder="Bankole">
+    <label class="fs-3 ms-4 mt-5" for="">lastname</label>
+    <input type="text" class="m-auto  rounded-3 col-11 py-4 fs-3 my-2 " id="lastName" placeholder="Fred">
+    <label class="fs-3 ms-4 mt-5" for="">Email Address</label>
+    <input type="text" class="m-auto rounded-3 col-11 py-4 fs-3 my-2 " id="email" placeholder="bankify@gmail.com">
+    <label class="fs-3 ms-4 mt-5" for="">Password</label>
+    <input type="password" class="m-auto rounded-3 col-11 py-4 fs-3 my-2 " id="passWord" placeholder="*******">
+  <button  class="m-auto rounded-pill mt-3 py-2 px-5  fs-2 btn btn-outline-light navigation__btn" style="background-color: rgb(27,19,51);" onclick="signUp()"> Sign Up </button>
   <!-- <input type="text" id="" placeholder=""> -->
+  
+  <center class="m-auto"><p class="my-1">ALready have an account?</p>
+    <a class="fs-4" style="color: rgb(27,19,51); " href="bankapp.html">Sign In</a>
+</center>
+
 </section>
+
 <script src="bootstrap-5.1.3-dist/js/bootstrap.js"></script>
 
   <script src="sign.js"></script>
