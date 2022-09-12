@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Welcome to Firebase Hosting</title>
+  <link rel="stylesheet" href="bootstrap.css">
+
+  <div class="container">
+    <div class="row">
+      <div class="col-6 mx-auto">
+        <div class="shadow p-4">
+          <!-- <form action=""> -->
+            <input type="text" name="" id="fullNameInp" placeholder="Full name" class="form-control mb-2">
+            <input type="text" name="address" id="addressInp" placeholder="Address" class="form-control mb-2">
+            <input type="text" name="phone" id="phoneInp" placeholder="Phone Number" class="form-control mb-2">
+            <input type="text" name="email" id="emailInp" placeholder=" Email" class="form-control mb-2">
+            <input type="text" name="Password" id="PasswordInp" placeholder="Password" class="form-control mb-2">
+            <button class="btn-success w-100" id="submitBtn">Submit</button>
+          <!-- </form> -->
+        </div>
+      </div>
+    </div>
+  </div>
+  <script type="module">
+    // Import the functions you need from the SDKs you need
+    import { initializeApp } from "https://www.gstatic.com/firebasejs/9.9.4/firebase-app.js";
+    import { getAuth, createUserWithEmailAndPassword } from "https://www.gstatic.com/firebasejs/9.9.4/firebase-auth.js";
+    // TODO: Add SDKs for Firebase products that you want to use
+    // https://firebase.google.com/docs/web/setup#available-libraries
+  
+    // Your web app's Firebase configuration
+    const firebaseConfig = {
+      apiKey: "AIzaSyAZgKkSF5A1zCVE6ovAMDi9pFpVelA6RqQ",
+      authDomain: "group-project-e3293.firebaseapp.com",
+      projectId: "group-project-e3293",
+      storageBucket: "group-project-e3293.appspot.com",
+      messagingSenderId: "152405361604",
+      appId: "1:152405361604:web:c50c1cc81ca7b0fb1a5a91"
+    };
+  
+    // Initialize Firebase
+    const app = initializeApp(firebaseConfig);
+    const auth = getAuth()
+
+    document.getElementById("submitBtn").addEventListener("click", function () {
+
+      let email = emailInp.value;
+      let password = passwordInp.value;
+
+      createUserWithEmailAndPassword( auth, email, password)
+    })
+  </script>
+
+  </body>
+
+</html>

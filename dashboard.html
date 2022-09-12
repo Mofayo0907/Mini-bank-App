@@ -7,43 +7,52 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
 
-    <link rel="stylesheet" href="dash.css">
+    <!-- <link rel="stylesheet" href="dash.css"> -->
+    <link rel="stylesheet" href="anoth.css">
     <link rel="stylesheet" href="bootstrap.css">
 </head>
 
 <body>
 
 
-    <div class="wrapper row">
-        <div class="sidebar col-3 m-auto">
-            <a class="btn text-white" href="index.html">
-                <div class="logo m-auto">BANKIFY</div>
-            </a>
-            <ul class="m-auto">
-                <li class="active"><a class="btn text-white" href="index.html">Home</a> </li>
-                <li>Transfer</li>
-                <li>chart</li>
-                <li>Notification</li>
-                <li>Setting</li>
-            </ul>
-        </div>
-        <div class="main col-9">
+    <div class=" contain">
+        <div class=" first pt-3 ">danger
 
-            <div class="head  d-flex justi col-10 m-auto">
-                <div class="head-title">
-                    <h2>Your Dashboard</h2>
-                    <span>Payment Update</span>
+
+
+            <a class=" btn fw-bold text-white" href="index.html">BANKIFY</a>
+            <ul class="mx-auto mt-4 b d-flex flex-column col-11  py-4 px-2 ">
+                <li class=" bg-black active "><a class=" nav-link text-white" href="index.html">🏠 Home</a> </li>
+                <li class="active"><a class="nav-link text-white" href="index.html">♻ Transactions </a></li>
+                <li class="active"><a class=" nav-link text-white" href="index.html">📈 Charts</a></li>
+                <li class="active"><a class=" nav-link text-white" href="index.html">📑 Notification</a></li>
+                <li class="active"><a class="nav-link text-white" href="index.html">⚙ Settings</a></li>
+
+            </ul>
+
+
+
+
+        </div>
+
+
+        <div class="main ">
+
+            <div class="head  d-flex flex-column shadow m-auto">
+                <div class="head-title bg-white ">
+                    <h2 class="border"> Dashboard</h2>
+                    Payment Update
                 </div>
                 <div class="balance">
-                    <h3 id="bala">Total balance =$1000</h3>
+                    <h3 id="bala">Total balance = $*****</h3>
                 </div>
                 <div class="image">
                     <img class="pic" src="./author boy.png" alt="">
                 </div>
             </div>
 
-            <div class="main-board row  ">
-                <div class="card-board m-auto col-lg-12 col-md-6 col-sm-6 col-6 my-5 row">
+            <div class="main-board row ">
+                <div class="card-board m-auto col-lg-12 col-md-6 col-sm-6 col-11 my-5 row">
 
                     <div class="card m-auto col-11 col-lg-3 col-md-11 col-sm-11">
                         <div class="inner-card row col-12">
@@ -71,15 +80,15 @@
                                     class="btn btn-outline-primary">TotalBalance</em>
 
                             </div>
-                            <img class=" col-8 col-lg-6 col-md-8 m-auto col-sm-8" src="./balance-45-removebg-preview.png"
-                                alt="">
+                            <img class=" col-8 col-lg-6 col-md-8 m-auto col-sm-8"
+                                src="./balance-45-removebg-preview.png" alt="">
                             <h3 class="col-8 m-auto" id="playR">$000</h3>
                         </div>
                     </div>
                 </div>
 
 
-                <div class="main-board col-6  col-lg-12 col-md-6 col-sm-6 row gap-2 m-auto my-5 ">
+                <div class="main-board col-12  col-lg-12 col-md-6 col-sm-6 row gap-2 m-auto my-5 ">
 
                     <div class="trans-board m-auto col-8 col-lg-3 col-md-5 col-sm-8">
                         <div class="">
@@ -107,6 +116,7 @@
             </div>
 
         </div>
+
     </div>
 
     <script src="script.js"></script>
